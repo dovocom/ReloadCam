@@ -67,8 +67,8 @@
 
 #-------------------------
 
-cccamBin = "/usr/bin/CCcam_230" #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
-cccamPath = "/etc/CCcam.cfg"  #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
+cccamBin = "/usr/local/bin/cccam" #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
+cccamPath = "/usr/local/etc/cccam.cfg"  #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
 
 #Cambia esta ruta SOLO si vas a ejecutar el script desde windows. Si lo vas a poner en el vu+ no hace falta que la toques
 cccamPathWindows = "C:\Users\gavaz\Desktop\CCcam.cfg"  
@@ -85,7 +85,7 @@ def GetCustomClines(): #No borres esta linea!
     
     #Ejemplos: (Recuerda borrar el '#')
 
-    #customClines.append('C: micline.no-ip.org 42000 user pass')
+    #customClines.append('F: don-dsm-oscam doemaareenpaswoordje')
     #customClines.append('C: micline2.no-ip.org 42000 user2 pass2')
     #customClines.append('C: micline3.no-ip.org 42000 user3 pass3')
     #customClines.append('N: miNline1.no-ip.org 42000 user1 pass1')
@@ -108,7 +108,7 @@ def GetCustomClines(): #No borres esta linea!
 
 import os.path
 
-sourceUrl = "https://raw.githubusercontent.com/gavazquez/ReloadCam/master/"
+sourceUrl = "https://raw.githubusercontent.com/dovocom/ReloadCam/master/"
 
 #region Refreshing methods
 
