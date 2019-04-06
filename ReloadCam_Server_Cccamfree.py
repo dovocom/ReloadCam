@@ -15,7 +15,7 @@ class Cccamfree(ReloadCam_Main.Server):
     def GetUrl(self, serverNo):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)        
         if serverNo <= 1:
-            realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOzZJglqOwcJu3vJvdxtthYKOcsw==')
+            realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJlxpLzflLq0uJOfl6pkcbG14g=='))
         else:
             realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJlxpLzflLq0uJOfl6pkcbG14g==')
 
