@@ -26,6 +26,9 @@ class Cccamfree(ReloadCam_Main.Server):
         cccamFreeClines = []
         cccamFreeClines.append(self.__GetCccamfreeCline(1))
         cccamFreeClines.append(self.__GetCccamfreeCline(2))
+        cccamFreeClines.append(self.__GetCccamfreeCline(3))
+        cccamFreeClines.append(self.__GetCccamfreeCline(4))
+        cccamFreeClines.append(self.__GetCccamfreeCline(5))
         cccamFreeClines = filter(None, cccamFreeClines)
         if len(cccamFreeClines) == 0: print "No Cccamfree lines retrieved"
         return cccamFreeClines
