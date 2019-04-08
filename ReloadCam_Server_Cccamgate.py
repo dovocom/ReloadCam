@@ -9,22 +9,22 @@ def GetVersion():
     return 1
 
 #Filename must start with Server, classname and argument must be the same!
-class Freecccam(ReloadCam_Main.Server):
+class Cccamgate(ReloadCam_Main.Server):
 
     def GetUrl(self):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)
-        realUrl = ReloadCam_Helper.Decrypt('maanpLZ7fKHK5NLEx5KfYZeyrnzX3dLhxslgmZiocbG14g==')
+        realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOy5KmmGKmsHzVyM_QzpGll6aocbG14g==')
         return realUrl
 
     def GetClines(self):
-        print "Now getting Freecccam clines!"
-        freecccamClines = []
-        freecccamClines.append(self.__GetFreecccamClinesCline())
-        freecccamClines = filter(None, freecccamClines)
-        if len(freecccamClines) == 0: print "No Freecccam lines retrieved"
-        return freecccamClines
+        print "Now getting Cccamgate clines!"
+        cccamgateClines = []
+        cccamgateClines.append(self.__GetCccamgateCline())
+        cccamgateClines = filter(None, cccamgateClines)
+        if len(cccamgateClines) == 0: print "No Cccamgate lines retrieved"
+        return cccamgateClines
 
-    def __GetFreecccamClinesCline(self):
+    def __GetCccamgateCline(self):
         htmlCode = ReloadCam_Helper.GetHtmlCode(None, self.GetUrl())
         cline = ReloadCam_Helper.FindStandardClineInText(htmlCode)
         if cline != None and ReloadCam_Helper.TestCline(cline):

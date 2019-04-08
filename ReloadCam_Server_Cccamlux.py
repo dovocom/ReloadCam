@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*- 
 
 #Refrescador automatico de clines
-#Creado por Dagger - https://github.com/gavazquez
 
 import ReloadCam_Main, ReloadCam_Helper
 
@@ -14,7 +13,7 @@ class Cccamlux(ReloadCam_Main.Server):
 
     def GetUrl(self):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)
-        realUrl = ReloadCam_Helper.Decrypt('maanpH1wfOnc453Ex5SToKC4uXvV1Nmep9aWl2B3hqSu35Pc19E=')
+        realUrl = ReloadCam_Helper.Decrypt("maanpH1wfOnc453Ex5SToKC4uXvV1Nmep9aWl2B3hqSu35Pc19E=")
         return realUrl
 
     def GetClines(self):
