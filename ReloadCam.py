@@ -67,7 +67,7 @@
 
 #-------------------------
 
-cccamBin = "/usr/local/bin/cccam" #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
+cccamBin = "/etc/init.d/cccam" #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
 cccamPath = "/usr/local/etc/cccam.cfg"  #Cambia esta ruta entre comillas en caso necesario pero no la borres!!
 
 #Cambia esta ruta SOLO si vas a ejecutar el script desde windows. Si lo vas a poner en el vu+ no hace falta que la toques
