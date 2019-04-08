@@ -218,7 +218,7 @@ def TransformToOscamFile(oscamPath, cccamPath):
                 file.write("\n")
                 file.write("[reader]"+"\n")
                 file.write("enable = 1"+"\n")
-                file.write("label = "+ cline.group(2)+"\n")
+                file.write("label = "+ cline.group(2)+"-"+cline.group(3)+"\n")
                 file.write("protocol = cccam"+"\n")         
                 file.write("device = "+cline.group(2)+","+cline.group(3)+"\n")
                 file.write("user = "+cline.group(4)+"\n")
