@@ -85,8 +85,7 @@ def GetCustomClines(): #No borres esta linea!
     
     #Ejemplos: (Recuerda borrar el '#')
 
-    customClines.append('F: don-dsm-oscam pazzword')
-    #customClines.append('C: micline2.no-ip.org 42000 user2 pass2')
+     #customClines.append('C: micline2.no-ip.org 42000 user2 pass2')
     #customClines.append('C: micline3.no-ip.org 42000 user3 pass3')
     #customClines.append('N: miNline1.no-ip.org 42000 user1 pass1')
 
