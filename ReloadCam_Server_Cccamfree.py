@@ -15,7 +15,7 @@ class Cccamfree(ReloadCam_Main.Server):
     def GetUrl(self, serverNo):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)        
         if serverNo <= 1:
-            realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJlxpLzflLq0uJOfl6pkcbG14g=='))
+            realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJlxpLzflLq0uJOfl6pkcbG14g==')
         else:
             realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJlxpLzflLq0uJOfl6pkcbG14g==')
 
@@ -26,7 +26,9 @@ class Cccamfree(ReloadCam_Main.Server):
         cccamFreeClines = []
         cccamFreeClines.append(self.__GetCccamfreeCline(1))
         cccamFreeClines.append(self.__GetCccamfreeCline(2))
-
+        cccamFreeClines.append(self.__GetCccamfreeCline(3))
+        cccamFreeClines.append(self.__GetCccamfreeCline(4))
+        cccamFreeClines.append(self.__GetCccamfreeCline(5))
         cccamFreeClines = filter(None, cccamFreeClines)
         if len(cccamFreeClines) == 0: print "No Cccamfree lines retrieved"
         return cccamFreeClines
