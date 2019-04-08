@@ -2,19 +2,19 @@
 # -*- coding: utf-8 -*- 
 
 #Refrescador automatico de clines
-#Creado por Dagger - https://github.com/gavazquez
+#Creado por Dagger
 
 import ReloadCam_Main, ReloadCam_Helper
 
 def GetVersion():
-    return 7
+    return 2
 
 #Filename must start with Server, classname and argument must be the same!
 class Cccamgenerator(ReloadCam_Main.Server):
 
     def GetUrl(self):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)
-        realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOkZekmJl1b7Dh0pvV08mWZGKbqLV74s3c')
+        realUrl = ReloadCam_Helper.Decrypt('maanpLZ7fKHIz9LC0ZiXoZm1osHh19-dxNOeYZqZsaa_09nb4ZDLlqZhpKux')
         return realUrl
 
     def GetClines(self):

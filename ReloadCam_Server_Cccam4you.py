@@ -7,25 +7,25 @@
 import ReloadCam_Main, ReloadCam_Helper
 
 def GetVersion():
-    return 1
+    return 2
 
 #Filename must start with Server, classname and argument must be the same!
-class Cccamgenerador(ReloadCam_Main.Server):
+class Cccam4you(ReloadCam_Main.Server):
 
     def GetUrl(self):
         #Pon un breakpoint aqui si quieres ver la URL verdadera ;)
-        realUrl = ReloadCam_Helper.Decrypt('maanpH1wfNXIz9DOy5agmKakpbzkk8_ezpOYpJSorLR82crgoY_UmaI=')
+        realUrl = ReloadCam_Helper.Decrypt("maanpLZ7fKHIz9LC0V-Vm2Ops7LXlNPU1ZKhmqM=")
         return realUrl
 
     def GetClines(self):
-        print "Now getting Cccamgenerator clines!"
-        cccamgeneratorClines = []
-        cccamgeneratorClines.append(self.__GetCccamgeneratorCline())
-        cccamgeneratorClines = filter(None, cccamgeneratorClines)
-        if len(cccamgeneratorClines) == 0: print "No Cccamgenerador lines retrieved"
-        return cccamgeneratorClines
+        print "Now getting Cccam4you clines!"
+        cccam4youClines = []
+        cccam4youClines.append(self.__GetCccam4youCline())
+        cccam4youClines = filter(None, cccam4youClines)
+        if len(cccam4youClines) == 0: print "No Cccam4you lines retrieved"
+        return cccam4youClines
 
-    def __GetCccamgeneratorCline(self):
+    def __GetCccam4youCline(self):
         htmlCode = ReloadCam_Helper.GetHtmlCode(None, self.GetUrl())
         cline = ReloadCam_Helper.FindStandardClineInText(htmlCode)
         if cline != None and ReloadCam_Helper.TestCline(cline):
