@@ -37,7 +37,7 @@ class Testious(ReloadCam_Main.Server):
             htmlCode = ReloadCam_Helper.GetHtmlCode(header, url)
             matches = regExpr.findall(htmlCode)
 
-        for i in range(0, 10):
+        for i in range(0, 6):
             if ReloadCam_Helper.TestCline(matches[i]):
                 clines.append(matches[i])
 
