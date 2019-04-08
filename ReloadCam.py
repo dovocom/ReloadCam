@@ -107,7 +107,7 @@ def GetCustomClines(): #No borres esta linea!
 
 import os.path
 
-sourceUrl = "https://github.com/dovocom/ReloadCam/"
+sourceUrl = "https://raw.githubusercontent.com/jograben/ReloadCam/master/"
 
 #region Refreshing methods
 
