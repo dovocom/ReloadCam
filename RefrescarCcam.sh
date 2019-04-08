@@ -1,1 +1,1 @@
-python /usr/script/ReloadCam.py -s Cccamfree --oscam "/usr/local/etc/oscam.server"
+python '/usr/script/ReloadCam.py' -s ALL --oscam '/usr/local/etc/oscam.server'

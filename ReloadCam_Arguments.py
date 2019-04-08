@@ -21,8 +21,6 @@ Arguments = [
     'Cccamious',
     'Cccambird',
     'Testious',
-    'ALL', #ALL Servers,
-    'ALLTF', #ALL Servers except testious and freecline
-    'ALLT', #ALL Servers except testious
-    'ALLF', #ALL Servers except freecline
+    'ALL', #ALL Servers, except testious
+    'ALLT', #ALL Servers with testious
 ]
